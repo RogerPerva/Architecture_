@@ -1,0 +1,140 @@
+html {
+  box-sizing: border-box; /* para hacer que el border o pading no afecte el ancho de nuestros elementos*/
+  font-size: 62.5%; /*para que 1 rem sea igual a 10px*/
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  display: column; /*Contenedor flexible*/
+  justify-content: center; /*Alineamos todo al centro*/
+  align-items: center; /*Alineamos todo al centro*/
+  min-height: 100vh; /* 100% del tamaño*/
+  /* background-image: url('/fondo1.jpg'); /*Escogemos el fondo*/
+  background-size: cover; /* Ajustamos completamente al contenedor*/
+  background-repeat: no-repeat; /*Si no cabe, que no se repita*/
+}
+
+.header {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 0;
+  /* background-color: transparent; Usado previamente para guiarnos*/
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2rem;
+  margin: 0 3rem 0 0;
+  z-index: 99;
+}
+.navigation {
+  display: flex;
+  gap: 3rem; /* Aumenta el espacio entre los elementos del menú */
+  line-height: 3rem;
+  padding: 0 5rem 0 0;
+}
+.navigation a {
+  text-decoration: none;
+  color: white;
+}
+/* Si el contenedor flex tiene su dirección establecida como row (horizontal), entonces align-items alinea los elementos verticalmente.
+Si el contenedor flex tiene su dirección establecida como column (vertical), entonces align-items alinea los elementos horizontalmente. */
+
+a:hover {
+  color: gray;
+  transition: 0.3s ease;
+}
+
+.profile-picture {
+  max-width: 150px;
+}
+.logo {
+  height: 14rem;
+  padding-left: 2rem;
+  width: auto;
+}
+.profile-picture {
+  margin-bottom: 2.5rem;
+}
+.container-conexion {
+  display: flex;
+  padding-top: 25rem ;
+  justify-content: center; /* Centra los elementos horizontalmente */
+}
+
+.container-conexion .container--renders{
+    display: block;
+}
+
+/*
+    Los valores del padding se aplican de arriba derecha izquierda abajo;
+ */
+.columna-1,
+.columna-2 {
+  flex: 1;
+  text-align: center;
+}
+
+.columna-1 {
+  padding: 0 0 0 10rem; /* Primer valor se aplica arriba y abajo y segundo valor izquierda y derecha */
+  font-size: 2rem;
+}
+
+.columna-1 p {
+  text-align: justify;
+  line-height: 3rem;
+}
+
+.columna-2 {
+  padding: 0 10rem 0 7rem; /* Primer valor se aplica arriba y abajo y segundo valor izquierda y derecha */
+}
+
+.columna-2 h1 {
+  font-size: 2.5rem;
+}
+
+.columna-2 p {
+  font-size: 2rem;
+  text-align: justify;
+  line-height: 3rem;
+}
+
+.divisor{ /*barra divisora para el intro y las casas a mostrar mas abajo */ 
+    margin: 2rem;
+}
+
+.renders{
+    padding-top: 2rem;
+}
+
+.render-1 {
+    display: flex; /* Establece el contenedor como un contenedor flexible */
+}
+
+.render-1 img {
+    flex: 0 0 auto; /* Hace que la imagen no crezca ni se encoja, manteniendo su tamaño original */
+    max-width: 200px;
+    max-height: 140px;
+    margin-left: 2.5rem;
+}
+
+.render-1 p {
+    flex: 1; /* Permite que el párrafo ocupe todo el espacio restante en el contenedor */
+    margin-left: 2.5rem; /* Agrega un espacio entre la imagen y el texto */
+    font-size: 1.5rem;
+    text-align: justify;
+    padding: 0 2rem 0 2rem ;
+}
+
+
+
