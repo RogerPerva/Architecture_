@@ -2,65 +2,106 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conexión Ingenieria Estructural</title>
   </head>
-  <body>
-  <div class="video"></div>
-    <header class="header">
-      <a href="index.html">
-        <img
-          src="/img/logo.jpeg"
-          class="logo"
-          alt="logo conexion ingenieria industrial"
-          href="index.html"
-        />
-      </a>
-      <nav class="navigation">
-        <a href="#">Inicio</a>
-        <a href="#">Proyecos</a>
-        <a href="#">Certificados</a>
-        <a href="#">Contacto</a>
-      </nav>
-    </header>
+  <body id="top">
+    <div class="video">
+      <!-- insercion pendiente de video -->
+    </div>
+
+    <div class="container-header">
+      <header class="header">
+        <a href="index.html">
+          <img
+            src="/img/logo.jpeg"
+            class="logo"
+            alt="logo conexion ingenieria industrial"
+            href="index.html"
+          />
+        </a>
+        <nav class="navigation">
+          <a href="#top">Inicio</a>
+          <a href="#">Proyecos</a>
+          <a href="#certificados">Certificados</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </header>
+    </div>
+    <!-- Container below video -->
+    <div class="intro">
+      <!-- carousel begin -->
+      <section aria-label="Casas muestra" >
+        <div class="carousel" data-carousel>
+          <button class="carousel-button prev" data-carousel-button="prev">
+            &#8656;
+          </button>
+
+          <button class="carousel-button next" data-carousel-button="next">
+            &#8658;
+          </button>
+          
+          <ul data-slides>
+            <li class="slide" data-active>
+              <img src="img/fachada1.jpeg" alt="fachada1" />
+            </li>
+            <li class="slide">
+              <img src="img/fachada2.jpeg" alt="fachada2" />
+            </li>
+            <li class="slide">
+              <img src="img/fachada3.jpeg" alt="fachada3" />
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
 
     <div class="container-conexion">
-        <div class="columna-1">
-            <img src="img/profile.jpeg" class="profile-picture" alt="profile picture">
-            <p>
-                Nuestros reconocimientos son el reflejo de que los estándares dentro del despacho
-                son muy altos, lo que nos han llevado a ser percibidos como una firma de excelencia.
-            </p>
-        </div>
-        <div class="columna-2">
-            <h1 class="title"> Soy Efrain Coronado </h2>
-                <p>
-                    Junto con mi equipo especializado realizo proyectos arquitectónicos y ejecutivos, interiorismo,
-                     dirección y administración de obras desde hace más de 20 años. 
-                </p>
-                <p>
-                    Los lugares que habitamos deben ser útiles, cómodos y responder a nuestras necesidades.
-                     La belleza surge de forma natural.
-                </p>
-        </div>
+      <div class="columna-1">
+        <img
+          src="img/profile.jpeg"
+          class="profile-picture"
+          alt="profile picture"
+        />
+        <p>
+          Nuestros reconocimientos son el reflejo de que los estándares dentro
+          del despacho son muy altos, lo que nos han llevado a ser percibidos
+          como una firma de excelencia.
+        </p>
+      </div>
+      <div class="columna-2">
+        <h1 class="title">Soy Efrain Coronado</h1>
+        <p>
+          Junto con mi equipo especializado realizo proyectos arquitectónicos y
+          ejecutivos, interiorismo, dirección y administración de obras desde
+          hace más de 20 años.
+        </p>
+        <p>
+          Los lugares que habitamos deben ser útiles, cómodos y responder a
+          nuestras necesidades. La belleza surge de forma natural.
+        </p>
+      </div>
     </div>
     <div class="divisor">
-        <hr>
+      <hr />
     </div>
 
     <div class="renders">
-        <div class="container--renders">
-            <div class="render-1">
-                <a href="proyectos.html">
-                    <img src="img/render1.jpeg" alt="Render Casa 1">
-                </a>
-                <p>
-                    Casa habitacion en ciudad de Orizaba con tan solo 100m cuadrados, reconocida por el Municipio 
-                    como gran lugar turisco ademas de reconocimiento por AirBnb a mejor AirBnb con acceso y ventilacion
-                </p>
-            </div>
+      <div class="container--renders">
+        <div class="render-1">
+          <a href="proyectos.html">
+            <img src="img/render1.jpeg" alt="Render Casa 1" />
+          </a>
+          <p>
+            Casa habitacion en ciudad de Orizaba con tan solo 100m cuadrados,
+            reconocida por el Municipio como gran lugar turisco ademas de
+            reconocimiento por AirBnb a mejor AirBnb con acceso y ventilacion
+          </p>
         </div>
+      </div>
     </div>
   </body>
+
+  <script src="js/app.js"></script>
 </html>
