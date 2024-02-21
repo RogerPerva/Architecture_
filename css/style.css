@@ -138,7 +138,8 @@ body a {
 /* Si el contenedor flex tiene su dirección establecida como row (horizontal), entonces align-items alinea los elementos verticalmente.
 Si el contenedor flex tiene su dirección establecida como column (vertical), entonces align-items alinea los elementos horizontalmente. */
 
-.container--renders a:hover, a:hover {
+.container--renders a:hover,
+a:hover {
   color: gray;
   transition: 0.3s ease;
 }
@@ -217,7 +218,9 @@ Si el contenedor flex tiene su dirección establecida como column (vertical), en
   margin: 2rem;
 }
 
-.renders {
+/* Render's section ---------------- */
+
+.renders, .formulario {
   padding-top: 5rem;
   padding-bottom: 5rem;
   display: flex;
@@ -234,7 +237,7 @@ Si el contenedor flex tiene su dirección establecida como column (vertical), en
 
 .render-1 a,
 .render-2 a,
-.render-3 a{
+.render-3 a {
   font-weight: bold;
   color: black;
   font-size: 1.5rem;
@@ -266,3 +269,25 @@ Si el contenedor flex tiene su dirección establecida como column (vertical), en
   text-align: justify;
   padding: 0 2rem; /* Aplica el relleno alrededor del texto */
 }
+
+.container--renders__text {
+  margin: 8rem 5rem;
+  font-size: 22px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Contacto ----------------------------*/
+
+.contacto {
+  background-color: purple;
+  color: black;
+  padding: 125px 0 70px 0;
+}
+
+.contacto p{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+
