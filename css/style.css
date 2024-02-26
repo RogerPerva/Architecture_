@@ -139,6 +139,8 @@ body a {
 Si el contenedor flex tiene su dirección establecida como column (vertical), entonces align-items alinea los elementos horizontalmente. */
 
 .container--renders a:hover,
+.columna-2 a:hover,
+.container--footer a:hover,
 a:hover {
   color: gray;
   transition: 0.3s ease;
@@ -197,6 +199,7 @@ a:hover {
 
 .columna-2 a {
   display: inline;
+
   font-weight: bold;
   color: black;
   font-size: 2rem;
@@ -220,13 +223,14 @@ a:hover {
 
 /* Render's section ---------------- */
 
-.renders, .formulario {
+.container,
+.formulario {
   padding-top: 5rem;
   padding-bottom: 5rem;
   display: flex;
-  margin-left: 20rem;
-  margin-right: 20rem;
-  justify-content: center;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  /* justify-content: center; */
 }
 
 .container--renders {
@@ -237,7 +241,8 @@ a:hover {
 
 .render-1 a,
 .render-2 a,
-.render-3 a {
+.render-3 a,
+.container--footer a{
   font-weight: bold;
   color: black;
   font-size: 1.5rem;
@@ -285,9 +290,54 @@ a:hover {
   padding: 125px 0 70px 0;
 }
 
-.contacto p{
+.contacto p {
   font-size: 2rem;
   font-weight: bold;
 }
 
+/* Container footer */
 
+.container .container--footer {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  gap: 3rem;
+}
+
+.logo-footer{
+ align-self: flex-start;
+ height: 8rem;
+}
+
+.social-medias{
+  width: 35px;
+  height: 35px;
+}
+
+.container--footer a{
+display: flex;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.footer-columna3{
+  text-align: center; /* Alinea horizontalmente el texto */
+
+}
+
+.footer-p{
+  margin: 0;
+  text-align: center;
+}
+ 
+.address{
+  display: flex;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  max-width: 20rem;
+}
+
+.location{
+
+  flex-basis: 10rem;
+}
