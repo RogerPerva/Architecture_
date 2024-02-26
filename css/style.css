@@ -3,22 +3,17 @@ html {
   font-size: 62.5%; /*para que 1 rem sea igual a 10px*/
 }
 
-*,
-*:before,
-*::after {
-  box-sizing: inherit;
-}
+
 
 body {
   margin: 0;
   padding: 0;
-
   font-family: "Open Sans", sans-serif;
   /* display: column; /*Contenedor flexible*/
   flex-direction: column;
   justify-content: center; /*Alineamos todo al centro*/
   align-items: center; /*Alineamos todo al centro*/
-  min-height: 100vh; /* 100% del tamaño*/
+  /* min-height: 100vh; 100% del tamaño */
   /* background-image: url('/fondo1.jpg'); /*Escogemos el fondo*/
   background-size: cover; /* Ajustamos completamente al contenedor*/
   background-repeat: no-repeat; /*Si no cabe, que no se repita*/
@@ -50,7 +45,7 @@ body a {
 .intro {
   padding-top: 1rem;
   width: 100%;
-  position: relative;
+  /* position: relative; */
 }
 .carousel {
   overflow: hidden;
@@ -153,6 +148,7 @@ a:hover {
   width: auto;
 }
 .profile-picture {
+  max-width: 100%;
   margin-bottom: 2.5rem;
 }
 
@@ -165,23 +161,31 @@ a:hover {
 
 .container-conexion {
   display: flex;
-  margin-left: 20rem;
-  margin-right: 20rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   justify-content: center; /* Centra los elementos horizontalmente */
 }
 
-.container-conexion .container--renders {
+/* .container-conexion {
+  margin-left: 2rem;
+  margin-right: 2rem;
+} */
+
+
+/* .container-conexion .container--renders {
   display: block;
-}
+} */
 
 /*
     Los valores del padding se aplican de arriba derecha izquierda abajo;
  */
+
 .columna-1,
 .columna-2 {
   flex: 1;
   text-align: center;
 }
+
 
 .columna-1 {
   padding: 0 0 0 10rem; /* Primer valor se aplica arriba y abajo y segundo valor izquierda y derecha */
@@ -235,7 +239,6 @@ a:hover {
 
 .container--renders {
   padding: 0 10rem 0 7rem;
-  padding: 0 0 0 10rem;
   font-size: 2rem;
 }
 
@@ -338,6 +341,56 @@ display: flex;
 }
 
 .location{
-
   flex-basis: 10rem;
 }
+
+
+/* Telefono */
+@media (max-width: 576px){
+.header{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  
+}
+  .navigation{
+    margin-top: 2rem;
+    padding: 0;
+  } 
+
+  /* Renders */
+  .columna-1,
+  .columna-2,
+  .container--renders{
+    padding: 0;
+    margin: 2rem;
+  }
+  
+  /* Footer */
+  .container .container--footer
+  {
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 2.5rem;
+  }
+  .container--footer a{
+    justify-content: space-around;
+    line-height: 2.5rem;
+  }
+
+  .container{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+
+  }
+  
+}
+
+/* Tablet */
+
+/* Laptop */
+
+/* Computadora */
