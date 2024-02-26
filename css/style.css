@@ -345,7 +345,8 @@ display: flex;
 }
 
 
-/* Telefono */
+/* Telefono *//* Telefono *//* Telefono *//* Telefono *//* Telefono *//* Telefono */
+
 @media (max-width: 576px){
 .header{
   display: flex;
@@ -353,17 +354,30 @@ display: flex;
   width: 100%;
   
 }
+
   .navigation{
-    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0 2rem 0;
     padding: 0;
   } 
 
   /* Renders */
   .columna-1,
   .columna-2,
+  .columna-2 p,
   .container--renders{
+   display: flex;
+   flex-direction: column;
     padding: 0;
     margin: 2rem;
+    font-size: 1.4rem;
+  }
+
+  .render-1,
+  .render-2,
+  .render-3 {
+    flex-direction: column;
   }
   
   /* Footer */
