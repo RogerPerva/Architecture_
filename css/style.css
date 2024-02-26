@@ -161,25 +161,17 @@ a:hover {
 
 .container-conexion {
   display: flex;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin: 0 15rem 0 15rem;
+  text-align: center;
+  /* margin-left: 2rem;
+  margin-right: 2rem; */
   justify-content: center; /* Centra los elementos horizontalmente */
+  
 }
-
-/* .container-conexion {
-  margin-left: 2rem;
-  margin-right: 2rem;
-} */
-
-
-/* .container-conexion .container--renders {
-  display: block;
-} */
 
 /*
     Los valores del padding se aplican de arriba derecha izquierda abajo;
  */
-
 .columna-1,
 .columna-2 {
   flex: 1;
@@ -232,8 +224,8 @@ a:hover {
   padding-top: 5rem;
   padding-bottom: 5rem;
   display: flex;
-  margin-left: 10rem;
-  margin-right: 10rem;
+  margin-left: 15rem;
+  margin-right: 15rem;
   /* justify-content: center; */
 }
 
@@ -372,6 +364,10 @@ display: flex;
     padding: 0;
     margin: 2rem;
     font-size: 1.4rem;
+  }
+
+  .container-conexion .p{
+    display: none;
   }
 
   .render-1,
